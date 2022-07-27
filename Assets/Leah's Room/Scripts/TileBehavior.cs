@@ -13,7 +13,6 @@ namespace Leah {
         }
 
         private void OnCollisionEnter(Collision other) {
-            Debug.Log(hasBeenPressed);
             if (other.gameObject.name == "PlayerObj") {
                 if (!hasBeenPressed) {
                     hasBeenPressed = true;
@@ -22,6 +21,7 @@ namespace Leah {
                 }
                 puzzleBehavior.TileUpdate();
             }
+            Debug.Log(hasBeenPressed);
         }
 
         public bool GetIsPressed() {
