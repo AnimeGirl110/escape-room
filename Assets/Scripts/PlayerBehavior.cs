@@ -32,9 +32,6 @@ namespace Leah {
                 //    )
                 ) * TRANSLATE_VEL * Time.deltaTime
             );
-            if (!Input.GetMouseButton(0)) {
-                return;
-            }
             rotation.x += Input.GetAxis(MOUSE_X);
             rotation.y += Input.GetAxis(MOUSE_Y);
             Quaternion xQuat = Quaternion.AngleAxis(rotation.x, Vector3.up);
