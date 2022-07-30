@@ -312,10 +312,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefab: {fileID: 1559060303583417930, guid: 50935ff38079b614faca73c438dee9f8, type: 3}
-  numTilesSide: 6
-  tileInterval: 1.05
+  numTilesSide: 5
+  tileInterval: 1.02
   tileOffsetX: 0
   tileOffsetY: 0
+  isPlayingPuzzle: 1
 --- !u!4 &730406942
 Transform:
   m_ObjectHideFlags: 0
@@ -602,11 +603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dfbc1ab43cc51049b14315c2d505362, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5440001
+      value: -1.544
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dfbc1ab43cc51049b14315c2d505362, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.21066669
+      value: 0.2106667
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dfbc1ab43cc51049b14315c2d505362, type: 3}
       propertyPath: m_LocalRotation.w
@@ -666,7 +667,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018576598}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a584ec2830f4a2547b8d6e092771be28, type: 3}

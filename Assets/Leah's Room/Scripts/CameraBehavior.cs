@@ -11,7 +11,9 @@ namespace Leah {
     void Start()
     {
       target = GameObject.Find("PlayerObj").transform;
+      //does this work?
     }
+
     private void LateUpdate()
     {
       transform.position = target.position;

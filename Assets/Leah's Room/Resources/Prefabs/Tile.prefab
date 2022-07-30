@@ -109,3 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleBehavior: {fileID: 0}
+  onMat: {fileID: 2100000, guid: be0b97a70e5328546b7183b77216f25b, type: 2}
+  offMat: {fileID: 2100000, guid: 9d97b6ea11b7180448f0040587820c2d, type: 2}
