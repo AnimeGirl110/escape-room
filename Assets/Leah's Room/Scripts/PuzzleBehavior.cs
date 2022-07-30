@@ -8,10 +8,22 @@ namespace Leah {
         public GameObject tilePrefab;
         private List<GameObject> tiles = new List<GameObject>();
         public int numTilesSide = 5;
-        public float tileInterval = 1;
+        public float tileInterval = 1.005f;
         public float tileOffsetX = -4.5f;
         public float tileOffsetY = -4.5f;
         public bool isPlayingPuzzle = true;
+
+        private int[][] grid = new int[][] {
+            new int[] {},
+            new int[] {},
+            new int[] {},
+            new int[] {},
+            new int[] {},
+            new int[] {},
+            new int[] {},
+            new int[] {},
+            new int[] {},
+        };
 
         // Start is called before the first frame update
         void Start()
@@ -28,13 +40,14 @@ namespace Leah {
         }
 
         public void TileUpdate() {
+            GameObject.Find("Door_Joint").GetComponent<Animation>().Play("DoorOpening");
             for (int i = 0; i < tiles.Count; i++) {
                 if (!tiles[i].GetComponent<TileBehavior>().GetIsPressed()) { //checks all tiles
                     return;
                 }
             } 
             isPlayingPuzzle = false;
-            GameObject.Find("Door_Joint").GetComponent<Animator>().Play("DoorOpening", 0, 0);
+            
             //open door
         }
 
