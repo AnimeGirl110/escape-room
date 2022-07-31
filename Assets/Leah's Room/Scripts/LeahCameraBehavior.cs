@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Leah {
-  public class CameraBehavior : MonoBehaviour
+  public class LeahCameraBehavior : MonoBehaviour
   {
     private Transform target;
 
