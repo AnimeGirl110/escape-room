@@ -31,7 +31,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
+<<<<<<< HEAD
+      "version": "1.15.13",
+=======
       "version": "1.15.16",
+>>>>>>> 2b106956c26db1129c76b66246dcc783ae1b8b6a
       "depth": 0,
       "source": "registry",
       "dependencies": {
