@@ -36,11 +36,11 @@ public class CrateScript : MonoBehaviour
         isMoving = true;
     }
 
-    void OnCollisionStay(Collision collision) {
-        if ((collision.gameObject.tag != groundTag) && (collision.gameObject.tag != bulletTag)) {
-            isMoving = false;
-        }
-    }
+    // void OnCollisionStay(Collision collision) {
+    //     if ((collision.gameObject.tag != groundTag) && (collision.gameObject.tag != bulletTag)) {
+    //         isMoving = false;
+    //     }
+    // }
 
     float RoundThree(float num) {
         return Mathf.Round((num - 1.5f) / 3) * 3 + 1.5f;
