@@ -10,7 +10,7 @@ namespace Leah {
     // Start is called before the first frame update
     void Start()
     {
-      target = GameObject.Find("PlayerObj").transform;
+      target = GameObject.Find("Player").transform;
     }
     private void LateUpdate()
     {
