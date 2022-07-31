@@ -29,6 +29,7 @@ public class BulletScript : MonoBehaviour
             if (diffX > 0) {
                 if (player.transform.position.x > collision.gameObject.transform.position.x - crateSize && player.transform.position.x < collision.gameObject.transform.position.x + crateSize) {
                     manager.RequestMove(collision.gameObject, collision.gameObject.transform.position - collision.gameObject.transform.forward * crateSize);
+                    Debug.Log(collision.gameObject.transform.position - collision.gameObject.transform.forward * crateSize);
                 }
             } else {
                 if (player.transform.position.z > collision.gameObject.transform.position.z - crateSize && player.transform.position.z < collision.gameObject.transform.position.z + crateSize) {
